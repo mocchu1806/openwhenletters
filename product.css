@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap');
+* {
+    box-sizing: border-box;
+  }
+
+  html {
+    font-family: 'Playfair Display', serif;
+  }
+
+  #body {
+    margin: 0;
+    overflow-x: hidden;
+    background-color: #8E5431;
+}
+.section{
+  background-color: #FFEBC9;
+  position: relative;
+  left: 140px;
+  width: 1200px;
+  height: 500px;
+  border-color: #4F0E0E;
+  border-width: 4px;
+  border-style: solid;
+}
+.first{
+  width: 250px;
+  height: 300px;
+  position: relative;
+  left:145px;
+  top: 55px;
+  -webkit-transform:rotate(-10deg);
+  -moz-transform: rotate(-10deg);
+  -ms-transform: rotate(-10deg);
+  -o-transform: rotate(-10deg);
+  transform: rotate(-10deg);
+}
+.second{
+  width: 250px;
+  height: 300px;
+  position: relative;
+  top: 20px;
+  left: 200px;
+}
+.made{
+  font-family: 'Felipa', cursive;
+  color: black;
+  font-size: 28px;
+  position: relative;
+  top: 100px;
+  left: -30px;
+  text-align: center;
+}
+.third{
+  width: 250px;
+  height: 300px;
+  position: relative;
+  top:60px;
+  left: 250px;
+  -webkit-transform:rotate(10deg);
+  -moz-transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  -o-transform: rotate(10deg);
+  transform: rotate(10deg);
+}
+.first, .second, .third{
+  position: relative;
+  left: 220px;
+  transition: 0.15s;
+}
+.first:hover, .second:hover, .third:hover{
+  transform: scale(1.10);
+  cursor: pointer;
+}
+.image-text{
+  position: relative;
+  top: 80px;
+}
+.products-list{
+  position: relative;
+  top: 150px;
+}
+.b{
+  width: 170px;
+  height: 50px;
+  background-color: #FFEBC9;
+  color: #8E5431;
+  border-radius: 10px;
+  border-color: #4F0E0E;
+  transition: 0.15s
+  }
+.b:hover{
+  background-color: #E08F62;
+  border-color: #4F0E0E;
+  border-width: 2px;
+  color: black;
+  transform: scale(1.03);
+}
+/* Products */
+.products-list{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-gap: 50px;
+    justify-content: center;
+    height: auto;
+    width: 90%;
+    position: relative;
+    left: 70px;
+    margin-bottom: 5vh;
+}
+.border{
+  border-color: black;
+  border-width: 4px;
+  background-color: #FFEBC9;
+}
+.content{
+  background-color: #8E5431;
+}
+.product{
+    height: auto;
+    width: 400px;
+    position: relative;
+    left: 0px;
+    padding-bottom: 5vh;
+    transition: 0.15s
+}
+.product:hover{
+  transform: scale(1.07);
+  cursor: pointer;
+}
+.product img{
+    height: 300px;
+    width: 300px;
+    position: relative;
+    left: 0;
+    margin-top: 15px;
+}
+button {
+  -webkit-border-radius: 1;
+  -moz-border-radius: 1;
+  border-radius: 1px;
+  font-family: 'Playfair Display', serif;
+  color: #FFF8D9;
+  font-size: 20px;
+  background: #BB371A;
+  padding: 10px 20px 10px 20px;
+  border: solid #BB371A 2px;
+  text-decoration: none;
+}
+.details button{
+  position: relative;
+  top: 50px;
+  left: 300px;
+  -webkit-border-radius: 1;
+  -moz-border-radius: 1;
+  border-radius: 1px;
+  font-family: 'Playfair Display', serif;
+  color: #FFF8D9;
+  font-size: 20px;
+  background: #BB371A;
+  padding: 10px 20px 10px 20px;
+  border: solid #BB371A 2px;
+  text-decoration: none;
+}
+.details button:hover {
+  background: #FFF8D9;
+  color: #BB371A;
+  text-decoration: none;
+}
+.shop{
+  position: relative;
+  left: 50px;
+}
+.a{
+  position: relative;
+  top: 35px;
+}
+button:hover {
+  background: #FFF8D9;
+  color: #BB371A;
+  text-decoration: none;
+}
+.product h3{
+    margin-left: 25px;
+    font-family: 'Playfair Display', serif;
+}
+.footer{
+  height: 20vw;
+  position: relative;
+  top: 50px;
+}
+
+/* popup */
+.details{
+    font-size: 18px;
+    width: 70vw;
+    height: 95vh;
+    position: fixed;
+    top: 2vh;
+    left: 14vw;
+    background-color: #ECDBBA;
+    border-color: #753422;
+    border-style: solid;
+    border-width: 4px;
+}
+.det{
+    display: flex;
+    padding: 15px;
+    padding-left: 5px;
+}
+.bg-image img{
+    width: 141.3vh;
+    z-index: -1000;
+    height: 93.4vh;
+    position: fixed;
+    top: 21px;
+    left: 220px;
+}
+.c{
+  position: relative;
+  top: 270px;
+}
+.p{
+    position: relative;
+    font-weight: 800;
+    top: 30px;
+    left:50px;
+}
+.btn{
+    width: 250px;
+}
+@media screen and (max-width:640px){
+.shop{
+  position: relative;
+  left: -30px;
+}
+    #body{
+      width: 100%;
+    }
+    .navbar{
+      width: 100%
+    }
+    .ti1{
+        display: none;
+    }
+    .ti{
+        color: white;
+    }
+    .first, .second, .third{
+      width: 80px;
+      height: 100px;
+      position: relative;
+      left: 43px;
+    }
+    .content{
+      width: 100%;
+    }
+    .blur{
+        width: 100%;
+        margin-left: 3%;
+    }
+    .made{
+      position: relative;
+      left: 7px;
+    }
+    .products-list{
+        display: grid;
+        grid-template-columns: repeat(1,auto);
+        grid-gap: 5px;
+        grid-row-gap: 20px;
+        position: relative;
+        left:0px;
+        top: 200px;
+    }
+    .product{
+        height: 50vh;
+        text-align: center;
+        width: 250px;
+        padding-left:0px;
+        position: relative;
+        left: 25px;
+    }
+    .product h3{
+        position: relative;
+        top: 0;
+        left: -30px;
+    }
+    .man img{
+      width: 100%;
+    }
+    .woman img{
+      width: 100%;
+      position: relative;
+      left: 16px;
+    }
+    .product img{
+        position: relative;
+        left: -25px;
+        height: 150px;
+        width: 150px;
+    }
+
+    .col2{
+        display: none;
+    }
+    .col1{
+        margin-left: 10px;
+    }
+    .col3 i{
+        color: #fbff00;
+        cursor: pointer;
+    }
+    .details{
+        width: 80vw;
+        top:15vh;
+        left:10vw;
+        height: 120vw;
+        padding-bottom: 10px;
+
+    }
+    .det{
+        display: block;
+        text-align: center;
+    }
+    .p{
+        position: relative;
+        top: 30px;
+        left: 5px;
+        font-size: 11px;
+    }
+    .bg-image img{
+        height: 423px;
+        width: 280px;
+        position: fixed;
+        left: 40px;
+        top: 100px;
+    }
+    .btn{
+     margin-left: 0%;
+     width: 160px;
+    }
+
+}
+@media (min-width:300px) and (max-width:500px){
+    .product{
+        height:auto;
+        padding-bottom: 4vh;
+    }
+}
